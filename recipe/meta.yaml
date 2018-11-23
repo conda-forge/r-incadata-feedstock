@@ -14,9 +14,9 @@ source:
   sha256: 009fa3b3cfd822da2bb1a928d58e522c75c4afeac1902b017a9c0be4e03f40aa
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -68,8 +68,7 @@ about:
     each time.  And finally, it also include a mechanism to aid the documentation process  connected
     to projects build on data from ''INCA''.'
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-2'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
