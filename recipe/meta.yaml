@@ -1,4 +1,4 @@
-{% set version = '0.6.4' %}
+{% set version = "0.8.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/incadata_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/incadata/incadata_{{ version }}.tar.gz
-  sha256: 009fa3b3cfd822da2bb1a928d58e522c75c4afeac1902b017a9c0be4e03f40aa
+  sha256: 252a7a9789a5c670d095b6392ca4725ab53b1ed1a202f47e59456886f33cd9ab
 
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1000
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
