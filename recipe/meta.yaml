@@ -47,7 +47,7 @@ test:
 
 about:
   home: https://cancercentrum.bitbucket.io/incadata
-  license: GPL-2
+  license: GPL-2.0-only
   summary: " Handle data in formats used by cancer centers in Sweden, both from 'INCA'  (<https://rcc.incanet.se>) and by the older register platform 'Rockan'. All\
     \ variables are coerced to suitable classes based on their format.  Dates (from various formats such as with missing month or day, with or  without century prefix\
     \ or with just a week number) are all recognized as dates and coerced to the ISO 8601 standard (Y-m-d). Boolean variables (internally stored either as 0/1 or\
