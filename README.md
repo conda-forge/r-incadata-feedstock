@@ -1,11 +1,11 @@
-About r-incadata
-================
+About r-incadata-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-incadata-feedstock/blob/main/LICENSE.txt)
 
 Home: https://cancercentrum.bitbucket.io/incadata
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-incadata-feedstock/blob/main/LICENSE.txt)
 
 Summary:  Handle data in formats used by cancer centers in Sweden, both from 'INCA'  (<https://rcc.incanet.se>) and by the older register platform 'Rockan'. All variables are coerced to suitable classes based on their format.  Dates (from various formats such as with missing month or day, with or  without century prefix or with just a week number) are all recognized as dates and coerced to the ISO 8601 standard (Y-m-d). Boolean variables (internally stored either as 0/1 or "True"/"False"/blanks  when exported) are coerced to logical.  Variable names ending in '_Beskrivning' and '_Varde' will be character,  and 'PERSNR' will be coerced (if possible) to a valid personal identification  number 'pin' (by the 'sweidnumbr' package). The package also allow the user to interactively choose if a variable should  be coerced into a potential format even though not all of its values might  conform to the recognized pattern. It also contain a caching mechanism in order to temporarily store data sets  with its newly decided formats in order to not rerun the identification  process each time.  The package also include a mechanism to aid the documentation process  connected to projects build on data from 'INCA'. From version 0.7, some general help functions are also included,  as previously found in the 'rccmisc' package.
 
